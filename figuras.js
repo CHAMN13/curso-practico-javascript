@@ -53,6 +53,7 @@ console.groupEnd();
 
 
 // Conectar con formulario
+// Cuadrado
 function calcularPerimetroCuadrado(){
   const input = document.getElementById("inputCuadrado");
   const value = input.value;
@@ -67,4 +68,48 @@ function calcularAreaCuadrado(){
 
   const area = areaCuadrado(value);
   alert(area);
+}
+
+// Tríangulo
+function calcularPerimetroTriangulo(){
+  const inputLado1 = document.getElementById("inputLado1");
+  const valueLado1 = Number(inputLado1.value);
+
+  const inputLado2 = document.getElementById("inputLado2");
+  const valueLado2 = Number(inputLado2.value);
+
+  const base = document.getElementById("inputBase");
+  const valueBase = Number(base.value);
+  
+  const perimetro = perimetroTriangulo(valueLado1, valueLado2, valueBase);
+  alert ("El perímetro del tríangulo es: " + perimetro);
+}
+
+function calcularAreaTriangulo(){
+  const base = document.getElementById("inputBase2");
+  const valueBase = Number(base.value);
+
+  const altura = document.getElementById("inputAltura");
+  const valueAltura = Number(altura.value);
+
+  const area = areaTriangulo(valueBase, valueAltura);
+  alert ("El área del tríangulo es " + area);
+
+}
+
+// Círculo
+function calcularPerimetroCirculo(){
+  const inputPerimetro = document.getElementById("inputCirculo");
+  const valuePerimetro = Number(inputPerimetro.value);
+
+  const perimetro = perimetroCirculo(valuePerimetro);
+  alert ("La circunferencia del círculo es: " + perimetro);
+}
+
+function calcularAreaCirculo(){
+  const inputArea = document.getElementById("inputCirculo");
+  const valueArea = Number(inputArea.value);
+
+  const area = areaCirculo(valueArea);
+  alert ("La circunferencia del círculo es: " + area);
 }
