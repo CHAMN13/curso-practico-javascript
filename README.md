@@ -7,3 +7,11 @@ Curso práctico de JavaScript
 - 2: implementar las fórmulas en JS
 - 3: crear funciones
 - 4: integrar JS con HTML
+
+
+## Taller #2: Porcentajes y descuentos
+
+- 1: definir las fórmulas
+- 2: implementar las fórmulas en JS
+- 3: crear funciones
+- 4: integrar JS con HTML
